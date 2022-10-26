@@ -22,3 +22,5 @@ Route::get('inicio', [controladorVistas::class, 'viewInicio'])->name('Inicio');
 Route::get('peliculas', [controladorVistas::class, 'viewPeliculas'])->name('Peliculas');
 Route::get('registrar', [controladorVistas::class, 'viewRegistar'])->name('Registrar');
 
+
+Route::post('peliculas/guardar', [controladorVistas::class, 'procesarPelicula_form'])->name('ProcesarPelicula');
